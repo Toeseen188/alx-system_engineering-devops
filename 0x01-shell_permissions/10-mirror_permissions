@@ -1,2 +1,2 @@
 #!/bin/bash
-umask 423
+umask -S 0022
