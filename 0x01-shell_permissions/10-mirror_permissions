@@ -1,2 +1,2 @@
 #!/bin/bash
-umask -S 0022
+chmod --reference=olleh hello
