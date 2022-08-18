@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Print the content of the working directory using for loop
+dir="$(ls)"
+for i in $dir
+do
+	echo "$i" | cut -d '-' -f2
+done
