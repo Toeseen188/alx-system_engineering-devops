@@ -1,5 +1,6 @@
 #!/usr/bin/env  bash
-#display clock
+# display clock from 0 - 12 hours
+#+ 59 minutes
 
 i=0
 while (( i < 13))
