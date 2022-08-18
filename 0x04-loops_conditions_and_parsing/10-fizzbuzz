@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# prin 1-100
+# if number is multiple of 3 and 5, print fizzbuzz
+# if number is multiple of 3, print fizz
+# if number is multiple of 5, print buzz
+
+i=1
+while (( i < 101))
+do
+	if (( i%3 == 0 && i%5 == 0))
+	then
+		echo "FizzBuzz"
+	elif (( i % 3 == 0))
+	then
+		echo "Fizz"
+	elif (( i % 5 == 0))
+	then
+		echo "Buzz"
+	else
+		echo "$i"
+	fi
+	((i++))
+done   	       
