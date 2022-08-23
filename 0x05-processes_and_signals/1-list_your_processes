@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # List processes in hierachy
-ps -aux
+ps -aux --forest
