@@ -1,6 +1,6 @@
 # Create a file with Puppert into /tmp
 
-file {'school':
+file { 'school':
   ensure => 'present',
   content => 'I love Puppet',
   mode => '0744',
