@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# write a bash script that generate RSA key pair
+ssh-keygen -b 4096 -t rsa
