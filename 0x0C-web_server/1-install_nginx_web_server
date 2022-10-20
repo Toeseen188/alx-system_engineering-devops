@@ -3,7 +3,7 @@
 # machine
 sudo apt-get update -y
 
-sudo apt-get install nginx -y
+sudo apt-get install -y nginx
 
 echo "Hello World!" | sudo tee /var/wwww/html/index.nginx-debian.html
 
