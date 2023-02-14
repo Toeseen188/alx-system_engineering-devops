@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 """ Extract information using api and
 save in CSV file """
 
