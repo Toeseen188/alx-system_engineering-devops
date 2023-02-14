@@ -9,7 +9,7 @@ import sys
 
 if __name__ == "__main__":
     userId = sys.argv[1]
-    
+
     url = 'https://jsonplaceholder.typicode.com/'
     user = '{}users/{}'.format(url, userId)
     res = requests.get(user)
@@ -23,14 +23,11 @@ if __name__ == "__main__":
 
     for task in tasks:
         task_list.append([userId, username,
-                        task.get('completed'),
-                        task.get('title')])
+                         task.get('completed'),
+                         task.get('title')])
+
     with open('{}.csv'.format(userId), mode='w') as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
 
         for task in task_list:
             writer.writerow(task)
-
-
-
-
